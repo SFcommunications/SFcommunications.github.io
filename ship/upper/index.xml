@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Upper Decks :: Autonomous Sytems</title>
+    <title>Upper Decks :: DOCS</title>
     <link>http://localhost:1313/ship/upper/index.html</link>
     <description>Where seagulls dare to land and captains steer with flair</description>
     <generator>Hugo</generator>

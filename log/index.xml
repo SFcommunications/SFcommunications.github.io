@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Captain&#39;s Log :: Autonomous Sytems</title>
+    <title>Captain&#39;s Log :: DOCS</title>
     <link>http://localhost:1313/log/index.html</link>
     <description>The Captain&#39;s Log</description>
     <generator>Hugo</generator>
