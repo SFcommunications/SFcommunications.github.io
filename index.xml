@@ -2,30 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to Cobra Calvin :: DOCS</title>
-    <link>http://localhost:1313/index.html</link>
+    <link>https://sfcommunications.github.io/index.html</link>
     <description>“When The Purple Pulpo sets sail, even the fish hold their breath.”&#xA;– HELP&#xA;The year is 1623. An unusual ship, The Purple Pulpo, emerges from the foggy sea, its sails dyed a brilliant purple that dazzles friend and foe alike. Cunning merchants whisper about a legendary octopus figurehead carved from driftwood—some say it dances under moonlight to ward off pesky sea ghosts (and suspicious tax collectors).</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sfcommunications.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Ship</title>
-      <link>http://localhost:1313/ship/index.html</link>
+      <link>https://sfcommunications.github.io/ship/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ship/index.html</guid>
+      <guid>https://sfcommunications.github.io/ship/index.html</guid>
       <description>Overview of the ship</description>
     </item>
     <item>
       <title>Captain&#39;s Log</title>
-      <link>http://localhost:1313/log/index.html</link>
+      <link>https://sfcommunications.github.io/github_pages/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/log/index.html</guid>
+      <guid>https://sfcommunications.github.io/github_pages/index.html</guid>
+      <description>The Captain&#39;s Log</description>
+    </item>
+    <item>
+      <title>Captain&#39;s Log</title>
+      <link>https://sfcommunications.github.io/hugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sfcommunications.github.io/hugo/index.html</guid>
+      <description>The Captain&#39;s Log</description>
+    </item>
+    <item>
+      <title>Captain&#39;s Log</title>
+      <link>https://sfcommunications.github.io/log/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sfcommunications.github.io/log/index.html</guid>
       <description>The Captain&#39;s Log</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/index.html</link>
+      <link>https://sfcommunications.github.io/about/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/index.html</guid>
+      <guid>https://sfcommunications.github.io/about/index.html</guid>
       <description>About this Website</description>
     </item>
   </channel>

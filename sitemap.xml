@@ -1,51 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/log/first-day/index.html</loc>
+    <loc>https://sfcommunications.github.io/github_pages/first-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/index.html</loc>
+    <loc>https://sfcommunications.github.io/log/first-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/upper/index.html</loc>
+    <loc>https://sfcommunications.github.io/hugo/first-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/log/index.html</loc>
+    <loc>https://sfcommunications.github.io/ship/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/log/second-day/index.html</loc>
+    <loc>https://sfcommunications.github.io/ship/upper/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/midst/index.html</loc>
+    <loc>https://sfcommunications.github.io/github_pages/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/about/index.html</loc>
+    <loc>https://sfcommunications.github.io/hugo/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/cargo/index.html</loc>
+    <loc>https://sfcommunications.github.io/log/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/log/third-day/index.html</loc>
+    <loc>https://sfcommunications.github.io/github_pages/second-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/midst/captain/index.html</loc>
+    <loc>https://sfcommunications.github.io/hugo/second-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/index.html</loc>
+    <loc>https://sfcommunications.github.io/log/second-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/midst/crew/index.html</loc>
+    <loc>https://sfcommunications.github.io/ship/midst/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/upper/nest/index.html</loc>
+    <loc>https://sfcommunications.github.io/about/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/index.html</loc>
+    <loc>https://sfcommunications.github.io/ship/cargo/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/index.html</loc>
+    <loc>https://sfcommunications.github.io/github_pages/third-day/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ship/upper/helm/index.html</loc>
+    <loc>https://sfcommunications.github.io/hugo/third-day/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/log/third-day/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/ship/midst/captain/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/ship/midst/crew/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/ship/upper/nest/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/tags/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/ship/upper/helm/index.html</loc>
   </url>
 </urlset>
