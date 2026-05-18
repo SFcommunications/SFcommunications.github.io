@@ -5,7 +5,7 @@ var relearn_searchindex = [
     "description": "Launch Day",
     "tags": [],
     "title": "Day 1",
-    "uri": "/public/log/first-day/index.html"
+    "uri": "/log/first-day/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems",
@@ -13,7 +13,7 @@ var relearn_searchindex = [
     "description": "Overview of the ship",
     "tags": [],
     "title": "The Ship",
-    "uri": "/public/ship/index.html"
+    "uri": "/ship/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship",
@@ -21,7 +21,7 @@ var relearn_searchindex = [
     "description": "Where seagulls dare to land and captains steer with flair",
     "tags": [],
     "title": "Upper Decks",
-    "uri": "/public/ship/upper/index.html"
+    "uri": "/ship/upper/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems",
@@ -29,7 +29,7 @@ var relearn_searchindex = [
     "description": "The Captain's Log",
     "tags": [],
     "title": "Captain's Log",
-    "uri": "/public/log/index.html"
+    "uri": "/log/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e Captain's Log",
@@ -37,7 +37,7 @@ var relearn_searchindex = [
     "description": "At Sea",
     "tags": [],
     "title": "Day 2",
-    "uri": "/public/log/second-day/index.html"
+    "uri": "/log/second-day/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship",
@@ -45,7 +45,7 @@ var relearn_searchindex = [
     "description": "Where captains and crew collide in organized chaos",
     "tags": [],
     "title": "Midst Ship",
-    "uri": "/public/ship/midst/index.html"
+    "uri": "/ship/midst/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems",
@@ -53,7 +53,7 @@ var relearn_searchindex = [
     "description": "About this Website",
     "tags": [],
     "title": "About",
-    "uri": "/public/about/index.html"
+    "uri": "/about/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship",
@@ -61,7 +61,7 @@ var relearn_searchindex = [
     "description": "Where organization meets chaos",
     "tags": [],
     "title": "Cargo",
-    "uri": "/public/ship/cargo/index.html"
+    "uri": "/ship/cargo/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e Captain's Log",
@@ -69,7 +69,7 @@ var relearn_searchindex = [
     "description": "Island Arrival",
     "tags": [],
     "title": "Day 3",
-    "uri": "/public/log/third-day/index.html"
+    "uri": "/log/third-day/index.html"
   },
   {
     "breadcrumb": "",
@@ -77,7 +77,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Welcome to Cobra Calvin",
-    "uri": "/public/index.html"
+    "uri": "/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship \u003e Midst Ship",
@@ -85,7 +85,7 @@ var relearn_searchindex = [
     "description": "A luxurious 4x4 room, home to our beloved Captain Hugo, with a genuine fake window",
     "tags": [],
     "title": "Captain's Cabin",
-    "uri": "/public/ship/midst/captain/index.html"
+    "uri": "/ship/midst/captain/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems",
@@ -93,7 +93,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Categories",
-    "uri": "/public/categories/index.html"
+    "uri": "/categories/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship \u003e Midst Ship",
@@ -101,7 +101,7 @@ var relearn_searchindex = [
     "description": "Where dreams of mutiny and tales of sea monsters are equally shared",
     "tags": [],
     "title": "Crew Quarters",
-    "uri": "/public/ship/midst/crew/index.html"
+    "uri": "/ship/midst/crew/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship \u003e Upper Decks",
@@ -109,7 +109,7 @@ var relearn_searchindex = [
     "description": "Where our lookout pretends to spot land while actually napping",
     "tags": [],
     "title": "Crow's Nest",
-    "uri": "/public/ship/upper/nest/index.html"
+    "uri": "/ship/upper/nest/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems",
@@ -117,7 +117,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Tags",
-    "uri": "/public/tags/index.html"
+    "uri": "/tags/index.html"
   },
   {
     "breadcrumb": "Autonomous Systems \u003e The Ship \u003e Upper Decks",
@@ -125,6 +125,6 @@ var relearn_searchindex = [
     "description": "Home to our steering wheel, which may or may not be connected to anything",
     "tags": [],
     "title": "The Helm",
-    "uri": "/public/ship/upper/helm/index.html"
+    "uri": "/ship/upper/helm/index.html"
   }
 ]
