@@ -1,78 +1,54 @@
 var relearn_searchindex = [
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Open Wrt",
+    "content": "https://www.youtube.com/watch?v=2k1uji4el7c",
+    "description": "Source material",
+    "tags": [],
+    "title": "Day 1",
+    "uri": "/openwrt/first-day/index.html"
+  },
+  {
+    "breadcrumb": "DOCS \u003e Hugo Site Builder",
     "content": "",
     "description": "21 Day",
     "tags": [],
     "title": "Day 21",
-    "uri": "/github_pages/first-day/index.html"
+    "uri": "/hugo/first-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
-    "content": "",
-    "description": "31 Day",
-    "tags": [],
-    "title": "Day 31",
-    "uri": "/log/first-day/index.html"
-  },
-  {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Github",
     "content": "",
     "description": "41 Day",
     "tags": [],
     "title": "Day 41",
-    "uri": "/hugo/first-day/index.html"
+    "uri": "/gh_pages/first-day/index.html"
   },
   {
-    "breadcrumb": "DOCS",
-    "content": "Overview Up in the Upper Decks, our lookout is either spotting treasure or taking an unauthorized nap in the Crow’s Nest, while the helmsman tries to convince everyone that yes, that spinning wheel actually does something.\nIn Midst Ship, the Captain’s busy adding another gold tassel to their hat collection, and the crew quarters are hosting the weekly “Who Stole My Last Clean Sock” investigation.\nDown in Cargo, well… let’s just say what the health inspector doesn’t know won’t hurt them. Between the mysteriously moving crates and that barrel of pickles that’s been fermenting since the last century, it’s quite an adventure.\nMap graph TD A[The Purple Pulpo] --\u003e B1[Upper Decks] A --\u003e B2[Midst Ship] A --\u003e B3[Cargo] B1 --\u003e C11[Crow's Nest] B1 --\u003e C12[The Helm] B2 --\u003e C21[Captain's Cabin] B2 --\u003e C22[Crew Quarters] click B1 \"upper\" \"View Upper Decks\" click B2 \"midst\" \"View Midst Ship\" click B3 \"cargo\" \"View Cargo\" click C11 \"upper/nest\" \"View Crow's Nest\" click C12 \"upper/helm\" \"View the Helm\" click C21 \"midst/captain\" \"View the Captain's Cabin\" click C22 \"midst/crew\" \"View the Crew Quarters\" style A fill:mediumpurple,stroke:rebeccapurple,stroke-width:4px style B1 fill:mediumvioletred,stroke:purple,stroke-width:4px style C11 fill:mediumvioletred,stroke:purple,stroke-width:4px style C12 fill:mediumvioletred,stroke:purple,stroke-width:4px style B2 fill:dodgerblue,stroke:royalblue,stroke-width:4px style C21 fill:dodgerblue,stroke:royalblue,stroke-width:4px style C22 fill:dodgerblue,stroke:royalblue,stroke-width:4px style B3 fill:darkturquoise,stroke:teal,stroke-width:4px",
-    "description": "Overview of the ship",
-    "tags": [],
-    "title": "The Ship",
-    "uri": "/ship/index.html"
-  },
-  {
-    "breadcrumb": "DOCS \u003e The Ship",
+    "breadcrumb": "DOCS \u003e Ship",
     "content": "The highest point of our mighty vessel! Up here, the crow’s nest scout shouts coordinates to our helmsman below, though sometimes they’re just playing an elaborate game of maritime telephone. The crow’s nest offers the best views in the house (or ship), perfect for spotting incoming weather, distant lands, or that seagull that keeps stealing the captain’s lunch.\nCrow's Nest Where our lookout pretends to spot land while actually napping\nThe Helm Home to our steering wheel, which may or may not be connected to anything {class=“children children-type-list children-sort-”}",
     "description": "Where seagulls dare to land and captains steer with flair",
     "tags": [],
-    "title": "Upper Decks",
-    "uri": "/ship/upper/index.html"
+    "title": "Policy",
+    "uri": "/ship/policy/index.html"
   },
   {
     "breadcrumb": "DOCS",
-    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 21 21 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
-    "description": "The Captain's Log",
+    "content": "Overview The Test Intangible Token System will be used for organization until “training” is complete.\nMap #ScottIsAlwaysRight Legal is the Law of Surtey and Accounting Computer Science is the answer to everything Accounting is the mechanism by which the story of the transfer of surety is told The accounting never changes",
+    "description": "Overview of the ship",
     "tags": [],
-    "title": "Captain's Log",
-    "uri": "/github_pages/index.html"
+    "title": "Ship",
+    "uri": "/ship/index.html"
   },
   {
-    "breadcrumb": "DOCS",
-    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
-    "description": "The Captain's Log",
-    "tags": [],
-    "title": "Captain's Log",
-    "uri": "/hugo/index.html"
-  },
-  {
-    "breadcrumb": "DOCS",
-    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 31 31 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
-    "description": "The Captain's Log",
-    "tags": [],
-    "title": "Captain's Log",
-    "uri": "/log/index.html"
-  },
-  {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Github",
     "content": "At Sea Captain’s Log, 0545 hours\n“A little sea spray can’t break our spirit—nor our appetite!”\n– The Chef, after a minor sauce-spill incident\nThe waves crash and the crew awakens to the salty sea breeze. Our beloved ship, The Purple Pulpo, plows forward, determined to complete our “Operation Squid Spaghetti.”\nStatus Weather: Slightly stormy with a touch of dramatic sea mist Crew Morale: Excitement level: High Hunger level: Astronomical Willingness to sing shanties: ∞ Culinary Update The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice. But fear not, the crew valiantly rescued the floating ladle, dubbing it Sir Stir-a-Lot.\nStay tuned for the next thrilling entry: How fresh noodles fare in gale-force winds… and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!",
     "description": "At Sea",
     "tags": [],
     "title": "Day 2",
-    "uri": "/github_pages/second-day/index.html"
+    "uri": "/gh_pages/second-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Hugo Site Builder",
     "content": "At Sea Captain’s Log, 0545 hours\n“A little sea spray can’t break our spirit—nor our appetite!”\n– The Chef, after a minor sauce-spill incident\nThe waves crash and the crew awakens to the salty sea breeze. Our beloved ship, The Purple Pulpo, plows forward, determined to complete our “Operation Squid Spaghetti.”\nStatus Weather: Slightly stormy with a touch of dramatic sea mist Crew Morale: Excitement level: High Hunger level: Astronomical Willingness to sing shanties: ∞ Culinary Update The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice. But fear not, the crew valiantly rescued the floating ladle, dubbing it Sir Stir-a-Lot.\nStay tuned for the next thrilling entry: How fresh noodles fare in gale-force winds… and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!",
     "description": "At Sea",
     "tags": [],
@@ -80,20 +56,44 @@ var relearn_searchindex = [
     "uri": "/hugo/second-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Open Wrt",
     "content": "At Sea Captain’s Log, 0545 hours\n“A little sea spray can’t break our spirit—nor our appetite!”\n– The Chef, after a minor sauce-spill incident\nThe waves crash and the crew awakens to the salty sea breeze. Our beloved ship, The Purple Pulpo, plows forward, determined to complete our “Operation Squid Spaghetti.”\nStatus Weather: Slightly stormy with a touch of dramatic sea mist Crew Morale: Excitement level: High Hunger level: Astronomical Willingness to sing shanties: ∞ Culinary Update The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice. But fear not, the crew valiantly rescued the floating ladle, dubbing it Sir Stir-a-Lot.\nStay tuned for the next thrilling entry: How fresh noodles fare in gale-force winds… and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!",
     "description": "At Sea",
     "tags": [],
     "title": "Day 2",
-    "uri": "/log/second-day/index.html"
+    "uri": "/openwrt/second-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship",
+    "breadcrumb": "DOCS",
+    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "description": "Create a Repository and push the/ /public directory to main",
+    "tags": [],
+    "title": "Github",
+    "uri": "/gh_pages/index.html"
+  },
+  {
+    "breadcrumb": "DOCS",
+    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 21 21 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "description": "Create a Simple Site With a Theme",
+    "tags": [],
+    "title": "Hugo Site Builder",
+    "uri": "/hugo/index.html"
+  },
+  {
+    "breadcrumb": "DOCS \u003e Ship",
     "content": "The heart of shipboard shenanigans, where the captain’s dignified stride from their cabin inevitably collides with sailors rolling barrels across the deck.\nCoffee aromas from the Captain’s cabin wage a constant battle with the hearty snores echoing from the crew bunks. It’s that magical space where formal reports mysteriously acquire coffee rings, and the crew’s sea shanties somehow find their way through the captain’s supposedly soundproof door.\nA daily theater of nautical life where rank meets reality, and everyone pretends not to notice the first mate sleepwalking in their pajamas.\nCaptain's Cabin A luxurious 4x4 room, home to our beloved Captain Hugo, with a genuine fake window\nCrew Quarters Where dreams of mutiny and tales of sea monsters are equally shared {class=“children children-type-list children-sort-”}",
     "description": "Where captains and crew collide in organized chaos",
     "tags": [],
-    "title": "Midst Ship",
-    "uri": "/ship/midst/index.html"
+    "title": "Network",
+    "uri": "/ship/network/index.html"
+  },
+  {
+    "breadcrumb": "DOCS",
+    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 1 Source material\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "description": "The Captain's Log",
+    "tags": [],
+    "title": "Open Wrt",
+    "uri": "/openwrt/index.html"
   },
   {
     "breadcrumb": "DOCS",
@@ -104,23 +104,23 @@ var relearn_searchindex = [
     "uri": "/about/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship",
+    "breadcrumb": "DOCS \u003e Ship",
     "content": "Where organization meets chaos and inventory management is more of a suggestion than a rule. Our state-of-the-art cargo facilities are divided into three distinctly disorganized bays.\nThe daily operations in our cargo bays resemble an interpretive dance of logistics, where inventory lists are more like creative writing exercises. Our automated sorting system, powered by quantum probability and caffeinated algorithms, occasionally decides to reorganize items based on their cosmic aura rather than traditional categories. This has led to fascinating discoveries, like finding out that rubber ducks and miniature black holes share remarkably similar energy signatures.\nThe deck crew has developed their own unique navigation system through the chaos, using a combination of intuition, lucky guesses, and the occasional guidance from our resident AI, which has developed a peculiar fondness for storing items in patterns that resemble abstract art. The resulting arrangement has been praised by visiting space artists as “a masterpiece of organized entropy” and “the most innovative storage solution since the invention of pocket dimensions.”\n​ Cargo Bay Alpha Cargo Bay Beta Cargo Bay Gamma 3,721 rubber ducks in spacesuits One very large tea cozy (planet-sized) Collection of anti-gravity hamster wheels Emergency supply of digital cookies Quantum-entangled sock pairs Library of dehydrated books Self-folding origami robots Tank of compressed rainbow matter Zero-gravity bubble wrap (extra bouncy) Time-traveling toast machine Collection of miniature black holes (safely contained) Spare parts for the ship’s interpretive dance module",
     "description": "Where organization meets chaos",
     "tags": [],
-    "title": "Cargo",
-    "uri": "/ship/cargo/index.html"
+    "title": "Corporation",
+    "uri": "/ship/corporation/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Github",
     "content": "Island Arrival Captain’s Log, 1140 hours\n“Ahoy, pasta-lovers! Our mission is finally a sauce-cess!”\n– The Enthused Quartermaster\nThe sun blazes overhead, revealing an island coastline shaped like a questionable noodle bowl — the perfect destination for our midnight pasta cargo.\nStatus Purple sails flutter in the island breeze The octopus figurehead is oddly shining—some claim the wooden tentacles are still dancing to an unseen rhythm Slight tang of marinara lingers across the entire deck Incident in the Crow’s Nest Upon our arrival in the harbor, the lookout nearly toppled from his perch in a fit of excitement. A mysterious figure on the dock signaled with a lantern three times—followed by a deafening call of a heron in flight.\nThe lookout swears the bird cawed in perfect Morse code, as if warning us of impending calamity. Moments later, a sudden gust toppled the spyglass stand, sending it clattering down to the quarterdeck, just as the heron sped off with a triumphant whistle.\nMission Debriefing Crates of sauce offloaded with care (and the occasional accidental slosh) Crowds of locals, excited for fresh spaghetti Squid ink banner hoisted high to announce “Operation Squid Spaghetti Complete”",
     "description": "Island Arrival",
     "tags": [],
     "title": "Day 3",
-    "uri": "/github_pages/third-day/index.html"
+    "uri": "/gh_pages/third-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
+    "breadcrumb": "DOCS \u003e Hugo Site Builder",
     "content": "Island Arrival Captain’s Log, 1140 hours\n“Ahoy, pasta-lovers! Our mission is finally a sauce-cess!”\n– The Enthused Quartermaster\nThe sun blazes overhead, revealing an island coastline shaped like a questionable noodle bowl — the perfect destination for our midnight pasta cargo.\nStatus Purple sails flutter in the island breeze The octopus figurehead is oddly shining—some claim the wooden tentacles are still dancing to an unseen rhythm Slight tang of marinara lingers across the entire deck Incident in the Crow’s Nest Upon our arrival in the harbor, the lookout nearly toppled from his perch in a fit of excitement. A mysterious figure on the dock signaled with a lantern three times—followed by a deafening call of a heron in flight.\nThe lookout swears the bird cawed in perfect Morse code, as if warning us of impending calamity. Moments later, a sudden gust toppled the spyglass stand, sending it clattering down to the quarterdeck, just as the heron sped off with a triumphant whistle.\nMission Debriefing Crates of sauce offloaded with care (and the occasional accidental slosh) Crowds of locals, excited for fresh spaghetti Squid ink banner hoisted high to announce “Operation Squid Spaghetti Complete”",
     "description": "Island Arrival",
     "tags": [],
@@ -128,20 +128,20 @@ var relearn_searchindex = [
     "uri": "/hugo/third-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Captain's Log",
-    "content": "Island Arrival Captain’s Log, 1140 hours\n“Ahoy, pasta-lovers! Our mission is finally a sauce-cess!”\n– The Enthused Quartermaster\nThe sun blazes overhead, revealing an island coastline shaped like a questionable noodle bowl — the perfect destination for our midnight pasta cargo.\nStatus Purple sails flutter in the island breeze The octopus figurehead is oddly shining—some claim the wooden tentacles are still dancing to an unseen rhythm Slight tang of marinara lingers across the entire deck Incident in the Crow’s Nest Upon our arrival in the harbor, the lookout nearly toppled from his perch in a fit of excitement. A mysterious figure on the dock signaled with a lantern three times—followed by a deafening call of a heron in flight.\nThe lookout swears the bird cawed in perfect Morse code, as if warning us of impending calamity. Moments later, a sudden gust toppled the spyglass stand, sending it clattering down to the quarterdeck, just as the heron sped off with a triumphant whistle.\nMission Debriefing Crates of sauce offloaded with care (and the occasional accidental slosh) Crowds of locals, excited for fresh spaghetti Squid ink banner hoisted high to announce “Operation Squid Spaghetti Complete”",
+    "breadcrumb": "DOCS \u003e Open Wrt",
+    "content": "",
     "description": "Island Arrival",
     "tags": [],
     "title": "Day 3",
-    "uri": "/log/third-day/index.html"
+    "uri": "/openwrt/third-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship \u003e Midst Ship",
+    "breadcrumb": "DOCS \u003e Ship \u003e Network",
     "content": "Welcome to the legendary 4x4 quarters of Captain Hugo, where navigation charts double as wallpaper and yesterday’s coffee cup might contain tomorrow’s coordinates! The genuine fake window offers stunning views of wherever the captain thinks we are (he’s been known to mistake the Mediterranean for the Caribbean on more than one occasion).\nDespite the creative filing system (read: artistic piles), our beloved captain insists he knows exactly where everything is – including his lucky compass, which has been “temporarily misplaced” for the past three months. The room features state-of-the-art organizational solutions, such as “that chair with all the stuff” and “the corner where important things go.”\nVisitors are kindly requested to not disturb the delicate ecosystem of nautical instruments, half-written logbooks, and at least seven different types of tea sets – all carefully arranged in what the captain calls his “systematic randomness.”",
     "description": "A luxurious 4x4 room, home to our beloved Captain Hugo, with a genuine fake window",
     "tags": [],
     "title": "Captain's Cabin",
-    "uri": "/ship/midst/captain/index.html"
+    "uri": "/ship/network/captain/index.html"
   },
   {
     "breadcrumb": "DOCS",
@@ -152,20 +152,20 @@ var relearn_searchindex = [
     "uri": "/categories/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship \u003e Midst Ship",
+    "breadcrumb": "DOCS \u003e Ship \u003e Network",
     "content": "Welcome to the most entertaining deck of our vessel, where every bunk tells a story and every footlocker holds at least three contraband items that technically violate maritime law. Our distinguished crew members have developed a complex social hierarchy based entirely on who can tell the tallest tale about encounters with legendary sea creatures. Current champion: Bosun McGee, who swears he taught a pod of narwhals to perform synchronized swimming routines.\nThe communal areas are a fascinating study in organized chaos. The mess hall doubles as a debate chamber where heated arguments about the best way to predict weather by reading tea leaves can last for days. The walls are decorated with “accurate” maps drawn by our navigator, complete with illustrations of sea serpents and mysterious islands that somehow move location between each voyage. Our ship’s cat, Admiral Whiskers, holds court from atop the highest shelf, judging everyone’s sea shanty performances with characteristic feline disdain.\nDown in the sleeping quarters, you’ll find an impressive collection of lucky charms, ranging from traditional rabbit’s feet to allegedly enchanted ship’s biscuits that are now too petrified to eat. Each bunk is personalized with trinkets from a hundred ports, though no one can quite explain how we acquired the stuffed dodo bird that watches over the entrance. The night watch maintains a running tally of mysterious lights seen over the water, though there’s strong suspicion that half of these sightings coincide suspiciously with nights when the rum rations were doubled.",
     "description": "Where dreams of mutiny and tales of sea monsters are equally shared",
     "tags": [],
     "title": "Crew Quarters",
-    "uri": "/ship/midst/crew/index.html"
+    "uri": "/ship/network/crew/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship \u003e Upper Decks",
+    "breadcrumb": "DOCS \u003e Ship \u003e Policy",
     "content": "Our dedicated lookout has reported some rather peculiar sightings from his lofty perch. Between his frequent “strategic rest periods” and tea breaks, he’s sworn on his mother’s favorite teacup that he’s witnessed the most extraordinary maritime phenomena ever documented.\nLast week alone, he submitted a detailed report claiming to have spotted a mermaid riding a seahorse while solving a Rubik’s cube, and a group of dolphins wearing top hats performing synchronized swimming routines to classical music.\nRecent notable sightings include:\nA giant squid playing chess with a whale shark Flying fish practicing for their pilot’s license A pirate ghost ship selling timeshares to passing vessels Penguins on vacation riding jet skis A rowing boeat crewed entirely by singing sea cucumbers",
     "description": "Where our lookout pretends to spot land while actually napping",
     "tags": [],
     "title": "Crow's Nest",
-    "uri": "/ship/upper/nest/index.html"
+    "uri": "/ship/policy/nest/index.html"
   },
   {
     "breadcrumb": "",
@@ -184,11 +184,11 @@ var relearn_searchindex = [
     "uri": "/tags/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e The Ship \u003e Upper Decks",
+    "breadcrumb": "DOCS \u003e Ship \u003e Policy",
     "content": "Our state-of-the-art navigation system relies heavily on the ancient art of reading cloud shapes and following particularly motivated seagulls. The ship’s wheel, a magnificent piece of mahogany that squeaks exactly like a dolphin’s laugh, is primarily used as an excellent coat hanger during peaceful voyages.\nThe real steering happens through our patented “Serendipitous Navigation System™” – we simply convince the ocean currents they’re flowing in the wrong direction through sophisticated reverse psychology. Our success rate of reaching intended destinations is a proud 12%, though we’ve discovered fourteen previously unknown islands and one mysterious floating coffee shop in the process.",
     "description": "Home to our steering wheel, which may or may not be connected to anything",
     "tags": [],
     "title": "The Helm",
-    "uri": "/ship/upper/helm/index.html"
+    "uri": "/ship/policy/helm/index.html"
   }
 ]
