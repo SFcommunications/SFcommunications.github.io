@@ -1,13 +1,5 @@
 var relearn_searchindex = [
   {
-    "breadcrumb": "DOCS \u003e Open Wrt",
-    "content": "https://www.youtube.com/watch?v=2k1uji4el7c",
-    "description": "Source material",
-    "tags": [],
-    "title": "Day 1",
-    "uri": "/openwrt/first-day/index.html"
-  },
-  {
     "breadcrumb": "DOCS \u003e Hugo Site Builder",
     "content": "",
     "description": "21 Day",
@@ -30,6 +22,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Policy",
     "uri": "/ship/policy/index.html"
+  },
+  {
+    "breadcrumb": "DOCS \u003e Mikrotik + Open Wrt",
+    "content": "RouterOS must be configured to install OpenWRT via netboot.\nhttps://mikrotik.com/product/RB750Gr3 We are using Version 6.49.10\nLog into the RouterOS gateway and go tto FILE and upload everything from the netboot zip file.\nGo to SYSTEM\u003ePACKAGE and click on DOWNGRADE to downgrade the OS.\nBackup your RouterOS License Key by going to SYSTEM\u003eLICENSE\u003eEXPORT KEY\nPrepare the device for netboot by going to SYSTEM\u003eROUTERBOARD\u003eSETTINGS and configuring the following.\nPower off the Router until ready to netboot.\nhttps://www.youtube.com/watch?v=2k1uji4el7c\nhttps://openwrt.org/toh/mikrotik/rb750gr3",
+    "description": "Preparing For Install",
+    "tags": [],
+    "title": "RouterOS",
+    "uri": "/openwrt/first-day/index.html"
   },
   {
     "breadcrumb": "DOCS",
@@ -56,14 +56,6 @@ var relearn_searchindex = [
     "uri": "/hugo/second-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Open Wrt",
-    "content": "At Sea Captain’s Log, 0545 hours\n“A little sea spray can’t break our spirit—nor our appetite!”\n– The Chef, after a minor sauce-spill incident\nThe waves crash and the crew awakens to the salty sea breeze. Our beloved ship, The Purple Pulpo, plows forward, determined to complete our “Operation Squid Spaghetti.”\nStatus Weather: Slightly stormy with a touch of dramatic sea mist Crew Morale: Excitement level: High Hunger level: Astronomical Willingness to sing shanties: ∞ Culinary Update The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice. But fear not, the crew valiantly rescued the floating ladle, dubbing it Sir Stir-a-Lot.\nStay tuned for the next thrilling entry: How fresh noodles fare in gale-force winds… and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!",
-    "description": "At Sea",
-    "tags": [],
-    "title": "Day 2",
-    "uri": "/openwrt/second-day/index.html"
-  },
-  {
     "breadcrumb": "DOCS",
     "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
     "description": "Create a Repository and push the/ /public directory to main",
@@ -80,6 +72,14 @@ var relearn_searchindex = [
     "uri": "/hugo/index.html"
   },
   {
+    "breadcrumb": "DOCS",
+    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRouterOS Preparing For Install\nOpenWRT Install Prepare OpenWRT\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "description": "Resources",
+    "tags": [],
+    "title": "Mikrotik + Open Wrt",
+    "uri": "/openwrt/index.html"
+  },
+  {
     "breadcrumb": "DOCS \u003e Ship",
     "content": "The heart of shipboard shenanigans, where the captain’s dignified stride from their cabin inevitably collides with sailors rolling barrels across the deck.\nCoffee aromas from the Captain’s cabin wage a constant battle with the hearty snores echoing from the crew bunks. It’s that magical space where formal reports mysteriously acquire coffee rings, and the crew’s sea shanties somehow find their way through the captain’s supposedly soundproof door.\nA daily theater of nautical life where rank meets reality, and everyone pretends not to notice the first mate sleepwalking in their pajamas.\nCaptain's Cabin A luxurious 4x4 room, home to our beloved Captain Hugo, with a genuine fake window\nCrew Quarters Where dreams of mutiny and tales of sea monsters are equally shared {class=“children children-type-list children-sort-”}",
     "description": "Where captains and crew collide in organized chaos",
@@ -88,12 +88,12 @@ var relearn_searchindex = [
     "uri": "/ship/network/index.html"
   },
   {
-    "breadcrumb": "DOCS",
-    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Squid Spaghetti Our midnight run involved top-secret pasta flour and premium marinara crucial for the realm’s spiciest mission. The crew was amped!\nDay 1 Source material\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
-    "description": "The Captain's Log",
+    "breadcrumb": "DOCS \u003e Mikrotik + Open Wrt",
+    "content": "In the last step we downgraded RouterOS to a version that will accept OpenWRT netbooting.\nNow we prepare our computer/workstation to be the server that boots the router with OpenWRT.\nDownload the proper image version for netbooting. https://openwrt.org/toh/mikrotik/rb750gr3#installatoin\nDownload the sysupgrade image to finish the installation.\nCreate a directory on your home Directory called tftp and go to that Directory.\nmkdir tftp cd ..tftp create a .sh file named “loader” nano loader.sh copy and paste the following into loader.sh #!/bin/bash USER=\"name\" IFNAME=\"enp0***\" /sbin/ip addr replace 192.168.1.10/24 dev $IFNAME /sbin/ip link set dev $IFNAME up /usr/sbin/dnsmasq --user=$USER \\ --no-daemon \\ --listen-address 192.168.1.10 \\ --bind-interfaces \\ -p0 \\ --dhcp-authoritative \\ --dhcp-range=192.168.1.100,192.168.1.200 \\ --bootp-dynamic \\ --dhcp-boot=openwrt-23.05.0-rc3-ramips-mt7621-mikrotik_routerboard-750gr3-initramfs-kernel.bin \\ --log-dhcp \\ --enable-tftp \\ --tftp-root=$(pwd) IMPORTANT: ensure the initramfs-kernel.bin file is located in the tftp directory. this script is counting on it being there.\nMake the script executable:\nchmod +x loader.sh We can run the script when ready to turn on the server. ./loader.sh https://openwrt.org/toh/mikrotik/common#netboot_of_openwrt_uses_dhcpbootptftp\nCaptain’s Log, 0545 hours\n“A little sea spray can’t break our spirit—nor our appetite!”\n– The Chef, after a minor sauce-spill incident\nThe waves crash and the crew awakens to the salty sea breeze. Our beloved ship, The Purple Pulpo, plows forward, determined to complete our “Operation Squid Spaghetti.”\nStatus Weather: Slightly stormy with a touch of dramatic sea mist Crew Morale: Excitement level: High Hunger level: Astronomical Willingness to sing shanties: ∞ Culinary Update The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice. But fear not, the crew valiantly rescued the floating ladle, dubbing it Sir Stir-a-Lot.\nStay tuned for the next thrilling entry: How fresh noodles fare in gale-force winds… and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!",
+    "description": "Prepare OpenWRT",
     "tags": [],
-    "title": "Open Wrt",
-    "uri": "/openwrt/index.html"
+    "title": "OpenWRT Install",
+    "uri": "/openwrt/second-day/index.html"
   },
   {
     "breadcrumb": "DOCS",
@@ -128,8 +128,8 @@ var relearn_searchindex = [
     "uri": "/hugo/third-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Open Wrt",
-    "content": "",
+    "breadcrumb": "DOCS \u003e Mikrotik + Open Wrt",
+    "content": "Quick guide:\nBackup your RouterOS key. Change the static ip of the wired interface on your computer to 192.168.1.10 Run tinyPXE server. Allow any Windows firewall prompts. 3a. Make sure option 54 is the same ip as the static one just set. If it’s not, connect to the router and power it on normally. Restart tinypxe, then power off the router. You can also disable other interfaces like wifi, etc. 3b. Uncheck the box in the “Boot File” section and select the initramfs-kernel.bin file for the router. 3c. Click Online. Plug the ethernet cable into port 1 of the router and tftp netboot. 4a. To netboot: hold the RESet button while powering up the router. Keep holding until the first beep, then release it when you see activity in tinypxe. Wait until the USR status led stops flashing. Do not power off the device. Unplug the ethernet cable from port 1 and plug it into port 2. Open a browser and navigate to 192.168.1.1 Flash the sysupgrade.bin file.",
     "description": "Island Arrival",
     "tags": [],
     "title": "Day 3",
