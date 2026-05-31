@@ -57,7 +57,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS",
-    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Push to Github git init git add . git commit -m \"no comment\" git branch -M main git push -u orgin main --force git remote add origin https://github.com/SFcommunications/SFcommunications.github.io Day 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Push to Github git init git add . git commit -m \"no comment\" git branch -M main git push -u orgin main git remote add origin https://github.com/SFcommunications/SFcommunications.github.io Day 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
     "description": "Create a Repository and push the/ /public directory to main",
     "tags": [],
     "title": "Github",
@@ -73,7 +73,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS",
-    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRouterOS Preparing For Install\nOpenWRT Install Prepare OpenWRT\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
+    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRouterOS Preparing For Install\nOpenWRT Install Prepare OpenWRT\nNetboot to Ram and Flash to Storage Installation {class=“children children-type-list children-sort-”}",
     "description": "Resources",
     "tags": [],
     "title": "Mikrotik + Open Wrt",
@@ -129,10 +129,10 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS \u003e Mikrotik + Open Wrt",
-    "content": "Quick guide:\nBackup your RouterOS key. Change the static ip of the wired interface on your computer to 192.168.1.10 Run tinyPXE server. Allow any Windows firewall prompts. 3a. Make sure option 54 is the same ip as the static one just set. If it’s not, connect to the router and power it on normally. Restart tinypxe, then power off the router. You can also disable other interfaces like wifi, etc. 3b. Uncheck the box in the “Boot File” section and select the initramfs-kernel.bin file for the router. 3c. Click Online. Plug the ethernet cable into port 1 of the router and tftp netboot. 4a. To netboot: hold the RESet button while powering up the router. Keep holding until the first beep, then release it when you see activity in tinypxe. Wait until the USR status led stops flashing. Do not power off the device. Unplug the ethernet cable from port 1 and plug it into port 2. Open a browser and navigate to 192.168.1.1 Flash the sysupgrade.bin file.",
-    "description": "Island Arrival",
+    "content": "Navigate to /tftp and run loader.sh\nConnect your computer/workstation/TFTP server to the WAN port of the router with an ethernet cable.\nHold reset button when powering on, do not let go until the router beeps once, you should also see activity in the terminal window.\nShut down loader.sh with ctrl+c.\nDisconnect Ethernet from WAN and connect to port 2,3,4, or 5.\nConfirm OpenWRT installed sucessfully by navigating to the gateway at https://192.168.1.1\nDo not create a password yet, OpenWRT is currently running in memeory, we need to upgrade the firmware with the sysupgrade image we downloaded earlier",
+    "description": "Installation",
     "tags": [],
-    "title": "Day 3",
+    "title": "Netboot to Ram and Flash to Storage",
     "uri": "/openwrt/third-day/index.html"
   },
   {
