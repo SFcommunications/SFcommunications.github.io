@@ -19,29 +19,29 @@
     <meta property="article:section" content="Mikrotik &#43; Open Wrt">
     <meta itemprop="name" content="OpenWRT Install :: DOCS">
     <meta itemprop="description" content="Prepare OpenWRT">
-    <meta itemprop="wordCount" content="293">
+    <meta itemprop="wordCount" content="174">
     <title>OpenWRT Install :: DOCS</title>
-    <link href="/images/logo.svg?1780253108" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1780253108" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1780253108" defer></script>
-    <script src="/js/search-lunr.min.js?1780253108" defer></script>
-    <script src="/js/search.min.js?1780253108" defer></script>
+    <link href="/images/logo.svg?1780255629" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1780255629" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1780255629" defer></script>
+    <script src="/js/search-lunr.min.js?1780255629" defer></script>
+    <script src="/js/search.min.js?1780255629" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1780253108";
+      window.relearn.index_js_url="/searchindex.en.js?1780255629";
     </script>
-    <script src="/js/lunr/lunr.min.js?1780253108" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1780253108" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1780253108" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1780253108" defer></script>
+    <script src="/js/lunr/lunr.min.js?1780255629" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1780255629" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1780255629" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1780255629" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1780253108" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1780253108" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1780253108" rel="stylesheet">
-    <link href="/css/theme.min.css?1780253108" rel="stylesheet">
-    <link href="/css/format-html.min.css?1780253108" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1780255629" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1780255629" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1780255629" rel="stylesheet">
+    <link href="/css/theme.min.css?1780255629" rel="stylesheet">
+    <link href="/css/format-html.min.css?1780255629" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -113,17 +113,7 @@
             <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#status">Status</a></li>
-        <li><a href="#culinary-update">Culinary Update</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav> 
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
@@ -158,28 +148,28 @@
 
 <h1 id="openwrt-install">OpenWRT Install</h1>
 
-<p>In the last step we downgraded RouterOS to a version that will accept OpenWRT netbooting.</p>
-<p>Now we prepare our computer/workstation to be the server that boots the router with OpenWRT.</p>
+<p>In the <a href="/openwrt/first-day/index.html">last step</a> we downgraded RouterOS to a version that will accept OpenWRT netbooting.</p>
+<p>Now we prepare our computer/workstation to be the server that <a href="https://openwrt.org/toh/mikrotik/rb750gr3#installation" rel="external">Net installs</a> the router with OpenWRT.</p>
 <ol>
 <li>
-<p>Download the proper image version for netbooting.
-<a href="https://openwrt.org/toh/mikrotik/rb750gr3#installatoin" rel="external">https://openwrt.org/toh/mikrotik/rb750gr3#installatoin</a></p>
+<p>Download the <a href="https://downloads.openwrt.org/releases/23.05.0-rc3/targets/ramips/mt7621/openwrt-23.05.0-rc3-ramips-mt7621-mikrotik_routerboard-750gr3-initramfs-kernel.bin" rel="external">proper image version</a> for netbooting.</p>
 </li>
 <li>
-<p>Download the sysupgrade image to finish the installation.</p>
+<p>Download the <a href="https://downloads.openwrt.org/releases/25.12.2/targets/ramips/mt7621/openwrt-25.12.2-ramips-mt7621-mikrotik_routerboard-750gr3-squashfs-sysupgrade.bin" rel="external">sysupgrade</a> image to finish the installation.</p>
 </li>
 <li>
 <p>Create a directory on your home Directory called tftp and go to that Directory.</p>
 </li>
 </ol>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>mkdir tftp
-cd ..tftp</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>cd ~
+mkdir tftp
+cd /tftp</code></pre></div>
 <ol start="4">
 <li>create a .sh file named &ldquo;loader&rdquo;</li>
 </ol>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nano loader.sh</code></pre></div>
 <ol start="5">
-<li>copy and paste the following into loader.sh</li>
+<li>copy and paste the following into loader.sh, ensure USER= the user home directory and IFNAME= the name of your ethernet interface.</li>
 </ol>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
 USER=&#34;name&#34;
@@ -208,32 +198,9 @@ IFNAME=&#34;enp0***&#34;
 </ol>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>chmod +x loader.sh</code></pre></div>
 <ol start="8">
-<li>We can run the script when ready to turn on the server.</li>
+<li>We can run the script when <a href="https://openwrt.org/toh/mikrotik/common#netboot_of_openwrt_uses_dhcpbootptftp" rel="external">ready to turn on the server</a>.</li>
 </ol>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>./loader.sh</code></pre></div>
-<p><a href="https://openwrt.org/toh/mikrotik/common#netboot_of_openwrt_uses_dhcpbootptftp" rel="external">https://openwrt.org/toh/mikrotik/common#netboot_of_openwrt_uses_dhcpbootptftp</a></p>
-<p><strong>Captain’s Log, 0545 hours</strong></p>
-<blockquote>
-<p><em><strong>&ldquo;A little sea spray can’t break our spirit—nor our appetite!&rdquo;</strong></em><br>
-– The Chef, after a minor sauce-spill incident</p>
-</blockquote>
-<p>The waves crash and the crew awakens to the salty sea breeze. Our beloved ship, <span class="badge cstyle primary badge-with-title"><span class="badge-title"><i class="fa-fw fas fa-anchor"></i></span><span class="badge-content">The Purple Pulpo</span></span>, plows forward, determined to complete our &ldquo;Operation Squid Spaghetti.&rdquo;</p>
-<h3 id="status">Status<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<ul>
-<li><strong>Weather:</strong> Slightly stormy with a touch of dramatic sea mist</li>
-<li><strong>Crew Morale:</strong>
-<ol>
-<li>Excitement level: High</li>
-<li>Hunger level: <em>Astronomical</em></li>
-<li>Willingness to sing shanties: ∞</li>
-</ol>
-</li>
-</ul>
-<h3 id="culinary-update">Culinary Update<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>The kitchen rattles with every wave, saucepans clanging like a symphony of disorganized percussion. Marinara overboard? Twice.
-But fear not, the crew valiantly rescued the floating ladle, dubbing it <strong>Sir Stir-a-Lot</strong>.</p>
-<hr>
-<p>Stay tuned for the <a href="/openwrt/third-day/index.html">next thrilling entry</a>: How fresh noodles fare in gale-force winds&hellip; and whether the sauce can hold up against the unstoppable appetite of seafaring sailors!</p>
 
   <footer class="footline">
   </footer>
@@ -307,8 +274,8 @@ But fear not, the crew valiantly rescued the floating ladle, dubbing it <strong>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1780253108" defer></script>
-    <script src="/js/theme.min.js?1780253108" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1780255629" defer></script>
+    <script src="/js/theme.min.js?1780255629" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
