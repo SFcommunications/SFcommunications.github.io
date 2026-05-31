@@ -25,7 +25,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS \u003e Mikrotik + Open Wrt",
-    "content": "RouterOS must be configured to install OpenWRT via netboot.\nhttps://mikrotik.com/product/RB750Gr3 We are using Version 6.49.10\nLog into the RouterOS gateway and go tto FILE and upload everything from the netboot zip file.\nGo to SYSTEM\u003ePACKAGE and click on DOWNGRADE to downgrade the OS.\nBackup your RouterOS License Key by going to SYSTEM\u003eLICENSE\u003eEXPORT KEY\nPrepare the device for netboot by going to SYSTEM\u003eROUTERBOARD\u003eSETTINGS and configuring the following.\nPower off the Router until ready to netboot.\nhttps://www.youtube.com/watch?v=2k1uji4el7c\nhttps://openwrt.org/toh/mikrotik/rb750gr3",
+    "content": "RouterOS must be configured to install OpenWRT via netboot. Grab the proper version’s files here\nWe are using Version 6.49.10\nLog into the RouterOS gateway and go to FILE and upload everything from the netboot zip file.\nGo to SYSTEM\u003ePACKAGE and click on DOWNGRADE to downgrade the OS.\nBackup your RouterOS License Key by going to SYSTEM\u003eLICENSE\u003eEXPORT KEY\nPrepare the device for netboot by going to SYSTEM\u003eROUTERBOARD\u003eSETTINGS and configuring the following.\nPower off the Router until ready to netboot.",
     "description": "Preparing For Install",
     "tags": [],
     "title": "RouterOS",
