@@ -32,8 +32,8 @@ var relearn_searchindex = [
     "uri": "/ship/policy/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Hardware and OpenWrt",
-    "content": "RouterOS must be configured to install OpenWRT via netboot. Grab the proper version’s files here\nWe are using Version 6.49.10, extract all files from the .zip you downloaded from the above step.\nLog into the RouterOS gateway https://192.168.88.1 and go to FILE and upload everything from the netboot zip file.\nGo to SYSTEM\u003ePACKAGE and click on DOWNGRADE to downgrade the OS.\nBackup your RouterOS License Key by going to SYSTEM\u003eLICENSE\u003eEXPORT KEY\nPrepare the device for netboot by going to SYSTEM\u003eROUTERBOARD\u003eSETTINGS and configuring the following.\nPower off the Router until ready to netboot. In the last step we downgraded RouterOS to a version that will accept OpenWRT netbooting.\nNow we prepare our computer/workstation to be the server that Net installs the router with OpenWRT.\nDownload the proper image version for netbooting.\nDownload the sysupgrade image to finish the installation.\nCreate a directory on your home Directory called tftp and go to that Directory.\ncd ~ mkdir tftp cd /tftp create a .sh file named “loader” nano loader.sh copy and paste the following into loader.sh, ensure USER= the user home directory and IFNAME= the name of your ethernet interface. #!/bin/bash USER=\"name\" IFNAME=\"enp0***\" /sbin/ip addr replace 192.168.1.10/24 dev $IFNAME /sbin/ip link set dev $IFNAME up /usr/sbin/dnsmasq --user=$USER \\ --no-daemon \\ --listen-address 192.168.1.10 \\ --bind-interfaces \\ -p0 \\ --dhcp-authoritative \\ --dhcp-range=192.168.1.100,192.168.1.200 \\ --bootp-dynamic \\ --dhcp-boot=openwrt-23.05.0-rc3-ramips-mt7621-mikrotik_routerboard-750gr3-initramfs-kernel.bin \\ --log-dhcp \\ --enable-tftp \\ --tftp-root=$(pwd) IMPORTANT: ensure the initramfs-kernel.bin file is located in the tftp directory. this script is counting on it being there.\nMake the script executable:\nchmod +x loader.sh We can run the script when ready to turn on the server. ./loader.sh",
+    "breadcrumb": "DOCS \u003e Hardware and OpenWRT",
+    "content": "RouterOS must be configured to install OpenWRT via netboot. Grab the proper version’s files here\nWe are using Version 6.49.10, extract all files from the .zip you downloaded from the above step.\nLog into the RouterOS gateway https://192.168.88.1 and go to FILE and upload everything from the netboot zip file.\nGo to SYSTEM\u003ePACKAGE and click on DOWNGRADE to downgrade the OS.\nBackup your RouterOS License Key by going to SYSTEM\u003eLICENSE\u003eEXPORT KEY\nPrepare the device for netboot by going to SYSTEM\u003eROUTERBOARD\u003eSETTINGS and configuring the following.\nPower off the Router until ready to netboot. In the last step we downgraded RouterOS to a version that will accept OpenWRT netbooting.\nNow we prepare our computer/workstation to be the server that Net installs the router with OpenWRT.\nDownload the proper image version for netbooting.\nDownload the sysupgrade image to finish the installation.\nCreate a directory on your home Directory called tftp and go to that Directory.\ncd ~ mkdir tftp cd /tftp create a .sh file named “loader” nano loader.sh copy and paste the following into loader.sh, ensure USER= the user home directory and IFNAME= the name of your ethernet interface. #!/bin/bash USER=\"name\" IFNAME=\"enp0***\" /sbin/ip addr replace 192.168.1.10/24 dev $IFNAME /sbin/ip link set dev $IFNAME up /usr/sbin/dnsmasq --user=$USER \\ --no-daemon \\ --listen-address 192.168.1.10 \\ --bind-interfaces \\ -p0 \\ --dhcp-authoritative \\ --dhcp-range=192.168.1.100,192.168.1.200 \\ --bootp-dynamic \\ --dhcp-boot=openwrt-23.05.0-rc3-ramips-mt7621-mikrotik_routerboard-750gr3-initramfs-kernel.bin \\ --log-dhcp \\ --enable-tftp \\ --tftp-root=$(pwd) IMPORTANT: ensure the initramfs-kernel.bin file is located in the tftp directory. this script is counting on it being there.\nMake the script executable:\nchmod +x loader.sh We can run the script when ready to turn on the server. ./loader.sh Navigate to /tftp and run loader.sh\nConnect your computer/workstation/TFTP server to the WAN port of the router with an ethernet cable.\nHold reset button when powering on, do not let go until the router beeps once, you should also see activity in the terminal window.\nShut down loader.sh with ctrl+c.\nDisconnect Ethernet from WAN and connect to port 2,3,4, or 5.\nConfirm OpenWRT installed sucessfully by navigating to the gateway at https://192.168.1.1\nDo not create a password yet, OpenWRT is currently running in memory, we need to upgrade the firmware with the sysupgrade image we downloaded earlier. Click on SYSTEM\u003eBACKUP/FLASH FIRMWARE.\nClick Flash New Firmware Image and upload the syspugrade file from earlier steps. Continue Wait for a few moments for the system to upgrade, OpenWRT will now be flashed to storage and you can restart the router to make sure it boots OpenWRT normally.\nlog into https://192.168.1.1 and change your password.",
     "description": "OpenWRT Install",
     "tags": [],
     "title": "RB750Gr3",
@@ -80,6 +80,14 @@ var relearn_searchindex = [
     "uri": "/hugo/second-day/index.html"
   },
   {
+    "breadcrumb": "DOCS \u003e Hardware and OpenWRT",
+    "content": "https://openwrt.org/toh/tp-link/eap615-wall\nThis device is rather easy to flash openWRT to, we used a POE switch connected to our router to power the EAP615, NO TFTP SERVER NEEDED.\nUse your router to find out what IP address is being used by the EAP615, log into the device an enable SSH in the MANAGMENT tab.\nThe first thing we need to do to the device is turn off certificate verification using SSH.\nChange the IP address in the command below to the EAP615 IP address.\nssh -o HostKeyAlgorithms=+ssh-rsa -o ConnectTimeout=30 admin@192.168.0.254 'cliclientd stopcs' Full OpenWRT Documentation for EAP615\nOn some devices, for the SSH connection to work, you need to add\n-o PubkeyAcceptedAlgorithms=+ssh-rsa -o RSAMinSize=1024 Rename the OpenWrt …squashfs-factory.bin binary to factory.bin (The GUI has a limit on the file name length, shortening to e.g. factory.bin works.)\nUpload the firmware on the firmware update page on the TP-link web GUI.\nReconfigure your static IP to talk to OpenWrt on 192.168.1.1 (the OpenWrt default).\nConnect your workstation to ETH1 on the EAP615, disconnect internet (but not power) from the EAP615, and connect to the LUCi WEBUI.\nGo to NETWORK then INTERFACES and select the ETH0 or (br-lan) interface and add another IPv4 address that is not being used on your current network.\nAP only or AP/Gateway Videos\nafter setting up AP only or AP/Gateway, use open WRT’s backup function to create an image that can be easily added to other nodes on the same harware.",
+    "description": "Install OpenWRT",
+    "tags": [],
+    "title": "EAP615",
+    "uri": "/openwrt/second-day/index.html"
+  },
+  {
     "breadcrumb": "DOCS",
     "content": "Captain Hugo reporting from the quarterdeck of the magnificent The Purple Pulpo. The seas are fair, and our hold is brimming with exotic cargo bound for distant ports. Our seasoned crew stands ready for another adventure across the Seven Seas.\nOperation Push to Github git init git add . git commit -m \"no comment\" git branch -M main git push -u orgin main git remote add origin https://github.com/SFcommunications/SFcommunications.github.io Day 41 41 Day\nDay 2 At Sea\nDay 3 Island Arrival {class=“children children-type-list children-sort-”}",
     "description": "Create a Repository and push the/ /public directory to main",
@@ -89,10 +97,10 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS",
-    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRB750Gr3 OpenWRT Install\nTPlink AX1800 Prepare OpenWRT\nNetboot to Ram and Flash to Storage Installation {class=“children children-type-list children-sort-”}",
+    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRB750Gr3 OpenWRT Install\nEAP615 Install OpenWRT\nNetboot to Ram and Flash to Storage Installation {class=“children children-type-list children-sort-”}",
     "description": "Resources",
     "tags": [],
-    "title": "Hardware and OpenWrt",
+    "title": "Hardware and OpenWRT",
     "uri": "/openwrt/index.html"
   },
   {
@@ -110,14 +118,6 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Network",
     "uri": "/ship/network/index.html"
-  },
-  {
-    "breadcrumb": "DOCS \u003e Hardware and OpenWrt",
-    "content": "https://openwrt.org/toh/tp-link/eap615-wall\nThis device is rather easy to flash openWRT to, we used a POE switch connected to our router to power the EAP615, NO TFTP SERVER NEEDED.\nUse your router to find out what IP address is being used by the EAP615, log into the device an enable SSH in the MANAGMENT tab.\nThe first thing we need to do to the device is turn off certificate verification using SSH.\nChange the IP address in the command below to the EAP615 IP address.\nssh -o HostKeyAlgorithms=+ssh-rsa -o ConnectTimeout=30 admin@192.168.0.254 'cliclientd stopcs' Full OpenWRT Documentation for EAP615\nOn some devices, for the SSH connection to work, you need to add\n-o PubkeyAcceptedAlgorithms=+ssh-rsa -o RSAMinSize=1024 Rename the OpenWrt …squashfs-factory.bin binary to factory.bin (The GUI has a limit on the file name length, shortening to e.g. factory.bin works.)\nUpload the firmware on the firmware update page on the TP-link web GUI.\nReconfigure your static IP to talk to OpenWrt on 192.168.1.1 (the OpenWrt default).\nConnect your workstation to ETH1 on the EAP615, disconnect internet (but not power) from the EAP615, and connect to the LUCi WEBUI.\nGo to NETWORK then INTERFACES and select the ETH0 or (br-lan) interface and add another IPv4 address that is not being used on your current network.\nAP only or AP/Gateway Videos\nafter setting up AP only or AP/Gateway, use open WRT’s backup function to create an image that can be easily added to other nodes on the same harware.",
-    "description": "Prepare OpenWRT",
-    "tags": [],
-    "title": "TPlink AX1800",
-    "uri": "/openwrt/second-day/index.html"
   },
   {
     "breadcrumb": "DOCS",
@@ -160,7 +160,7 @@ var relearn_searchindex = [
     "uri": "/hugo/third-day/index.html"
   },
   {
-    "breadcrumb": "DOCS \u003e Hardware and OpenWrt",
+    "breadcrumb": "DOCS \u003e Hardware and OpenWRT",
     "content": "Navigate to /tftp and run loader.sh\nConnect your computer/workstation/TFTP server to the WAN port of the router with an ethernet cable.\nHold reset button when powering on, do not let go until the router beeps once, you should also see activity in the terminal window.\nShut down loader.sh with ctrl+c.\nDisconnect Ethernet from WAN and connect to port 2,3,4, or 5.\nConfirm OpenWRT installed sucessfully by navigating to the gateway at https://192.168.1.1\nDo not create a password yet, OpenWRT is currently running in memory, we need to upgrade the firmware with the sysupgrade image we downloaded earlier. Click on SYSTEM\u003eBACKUP/FLASH FIRMWARE.\nClick Flash New Firmware Image and upload the syspugrade file from earlier steps. Continue Wait for a few moments for the system to upgrade, OpenWRT will now be flashed to storage and you can restart the router to make sure it boots OpenWRT normally.\nlog into https://192.168.1.1 and change your password.",
     "description": "Installation",
     "tags": [],
