@@ -97,7 +97,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS",
-    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRB750Gr3 OpenWRT Install\nEAP615 Install OpenWRT\nNetboot to Ram and Flash to Storage Installation {class=“children children-type-list children-sort-”}",
+    "content": "Hardware Datasheets\nHardware table\nOpenWRT Common Installs\nVideo tutorial\nRB750Gr3 OpenWRT Install\nEAP615 Install OpenWRT\nEAP225 V3 or V4 OpenWRT Installation {class=“children children-type-list children-sort-”}",
     "description": "Resources",
     "tags": [],
     "title": "Hardware and OpenWRT",
@@ -161,10 +161,10 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DOCS \u003e Hardware and OpenWRT",
-    "content": "Navigate to /tftp and run loader.sh\nConnect your computer/workstation/TFTP server to the WAN port of the router with an ethernet cable.\nHold reset button when powering on, do not let go until the router beeps once, you should also see activity in the terminal window.\nShut down loader.sh with ctrl+c.\nDisconnect Ethernet from WAN and connect to port 2,3,4, or 5.\nConfirm OpenWRT installed sucessfully by navigating to the gateway at https://192.168.1.1\nDo not create a password yet, OpenWRT is currently running in memory, we need to upgrade the firmware with the sysupgrade image we downloaded earlier. Click on SYSTEM\u003eBACKUP/FLASH FIRMWARE.\nClick Flash New Firmware Image and upload the syspugrade file from earlier steps. Continue Wait for a few moments for the system to upgrade, OpenWRT will now be flashed to storage and you can restart the router to make sure it boots OpenWRT normally.\nlog into https://192.168.1.1 and change your password.",
-    "description": "Installation",
+    "content": "https://forum.openwrt.org/t/anyone-working-on-tp-link-eap225/33956\nLike the EAP615, The EAP225 (v3 or v4) is rather easy to flash openWRT to. In this case, there is only one Ethernet port on the EAP225.\nUse your router to find out what IP address is being used by the EAP225, log into the device an enable SSH in the MANAGMENT tab.\nThe first thing we need to do to the device is turn off certificate verification using SSH.\nChange the IP address in the command below to the EAP225 IP address.\nssh -o HostKeyAlgorithms=+ssh-rsa -o ConnectTimeout=30 admin@192.168.0.254 'cliclientd stopcs' Full OpenWRT Documentation for EAP225\nOn some devices, for the SSH connection to work, you need to add\n-o PubkeyAcceptedAlgorithms=+ssh-rsa -o RSAMinSize=1024 Rename the OpenWrt …squashfs-factory.bin binary to factory.bin (The GUI has a limit on the file name length, shortening to e.g. factory.bin works.)\nUpload the firmware on the firmware update page on the TP-link web GUI.\nReconfigure your static IP to talk to OpenWrt on 192.168.1.1 (the OpenWrt default).\nConnect your workstation to ETH1 on the EAP615, disconnect internet (but not power) from the EAP615, and connect to the LUCi WEBUI.\nGo to NETWORK then INTERFACES and select the ETH0 or (br-lan) interface and add another IPv4 address that is not being used on your current network.\nAP only or AP/Gateway Videos\nafter setting up AP only or AP/Gateway, use open WRT’s backup function to create an image that can be easily added to other nodes on the same harware.",
+    "description": "OpenWRT Installation",
     "tags": [],
-    "title": "Netboot to Ram and Flash to Storage",
+    "title": "EAP225 V3 or V4",
     "uri": "/openwrt/third-day/index.html"
   },
   {

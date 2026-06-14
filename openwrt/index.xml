@@ -22,11 +22,11 @@
       <description>Install OpenWRT</description>
     </item>
     <item>
-      <title>Netboot to Ram and Flash to Storage</title>
+      <title>EAP225 V3 or V4</title>
       <link>https://sfcommunications.github.io/openwrt/third-day/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sfcommunications.github.io/openwrt/third-day/index.html</guid>
-      <description>Installation</description>
+      <description>OpenWRT Installation</description>
     </item>
   </channel>
 </rss>
