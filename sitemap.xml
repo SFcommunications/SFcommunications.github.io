@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sfcommunications.github.io/bgp/first-day/index.html</loc>
+  </url>
+  <url>
     <loc>https://sfcommunications.github.io/hugo/first-day/index.html</loc>
   </url>
   <url>
@@ -16,6 +19,12 @@
     <loc>https://sfcommunications.github.io/ship/index.html</loc>
   </url>
   <url>
+    <loc>https://sfcommunications.github.io/bgp/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/bgp/second-day/index.html</loc>
+  </url>
+  <url>
     <loc>https://sfcommunications.github.io/gh_pages/second-day/index.html</loc>
   </url>
   <url>
@@ -25,10 +34,10 @@
     <loc>https://sfcommunications.github.io/gh_pages/index.html</loc>
   </url>
   <url>
-    <loc>https://sfcommunications.github.io/hugo/index.html</loc>
+    <loc>https://sfcommunications.github.io/openwrt/index.html</loc>
   </url>
   <url>
-    <loc>https://sfcommunications.github.io/openwrt/index.html</loc>
+    <loc>https://sfcommunications.github.io/hugo/index.html</loc>
   </url>
   <url>
     <loc>https://sfcommunications.github.io/ship/network/index.html</loc>
@@ -41,6 +50,9 @@
   </url>
   <url>
     <loc>https://sfcommunications.github.io/ship/corporation/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sfcommunications.github.io/bgp/third-day/index.html</loc>
   </url>
   <url>
     <loc>https://sfcommunications.github.io/gh_pages/third-day/index.html</loc>

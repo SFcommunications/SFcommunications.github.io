@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mikrotik &#43; Open Wrt :: DOCS</title>
+    <title>Hardware and OpenWrt :: DOCS</title>
     <link>https://sfcommunications.github.io/openwrt/index.html</link>
     <description>Resources</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://sfcommunications.github.io/openwrt/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RouterOS</title>
+      <title>RB750Gr3</title>
       <link>https://sfcommunications.github.io/openwrt/first-day/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sfcommunications.github.io/openwrt/first-day/index.html</guid>
-      <description>Preparing For Install</description>
+      <description>OpenWRT Install</description>
     </item>
     <item>
-      <title>OpenWRT Install</title>
+      <title>TPlink AX1800</title>
       <link>https://sfcommunications.github.io/openwrt/second-day/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sfcommunications.github.io/openwrt/second-day/index.html</guid>
