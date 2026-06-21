@@ -19,29 +19,29 @@
     <meta property="article:section" content="Hardware and OpenWRT">
     <meta itemprop="name" content="EAP225 V3 or V4 :: DOCS">
     <meta itemprop="description" content="OpenWRT Installation">
-    <meta itemprop="wordCount" content="243">
+    <meta itemprop="wordCount" content="333">
     <title>EAP225 V3 or V4 :: DOCS</title>
-    <link href="/images/logo.svg?1781476919" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1781476919" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1781476919" defer></script>
-    <script src="/js/search-lunr.min.js?1781476919" defer></script>
-    <script src="/js/search.min.js?1781476919" defer></script>
+    <link href="/images/logo.svg?1782064809" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1782064809" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1782064809" defer></script>
+    <script src="/js/search-lunr.min.js?1782064809" defer></script>
+    <script src="/js/search.min.js?1782064809" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1781476919";
+      window.relearn.index_js_url="/searchindex.en.js?1782064809";
     </script>
-    <script src="/js/lunr/lunr.min.js?1781476919" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1781476919" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1781476919" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1781476919" defer></script>
+    <script src="/js/lunr/lunr.min.js?1782064809" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1782064809" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1782064809" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1782064809" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1781476919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781476919" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781476919" rel="stylesheet">
-    <link href="/css/theme.min.css?1781476919" rel="stylesheet">
-    <link href="/css/format-html.min.css?1781476919" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1782064809" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1782064809" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1782064809" rel="stylesheet">
+    <link href="/css/theme.min.css?1782064809" rel="stylesheet">
+    <link href="/css/format-html.min.css?1782064809" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -154,17 +154,26 @@
 <p>Like the EAP615, The EAP225 (v3 or v4) is rather easy to flash openWRT to. In this case, there is only one Ethernet port on the EAP225.</p>
 </li>
 <li>
-<p>Use your router to find out what IP address is being used by the EAP225, log into the device an enable SSH in the MANAGMENT tab.</p>
-</li>
-<li>
-<p>The first thing we need to do to the device is turn off certificate verification using SSH.</p>
+<p>Use your router to find out what IP address is being used by the EAP225.
+Login to the WEBUI with admin/admin. Ignore the following error, go to advanced and PROCEED.</p>
 </li>
 </ol>
+<p><a href="#R-image-564afdb0c6e47a97a04f329fc6b06094" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-564afdb0c6e47a97a04f329fc6b06094"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image.png"></a></p>
+<p>You may have to complete TPlinks initial setup to access the GUI.</p>
+<p><a href="#R-image-cb120158b6c20b303251ed2107c65e80" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image-4.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb120158b6c20b303251ed2107c65e80"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image-4.png"></a></p>
+<p>Enable SSH in the MANAGMENT tab.</p>
+<p><a href="#R-image-83aad1670d2e75fc5f8cabf1c71cec1d" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image-1.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-83aad1670d2e75fc5f8cabf1c71cec1d"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image-1.png"></a></p>
+<ol start="3">
+<li>Next we need to do to the device is turn off certificate verification using SSH. open a terminal and SSH into the EAP225</li>
+</ol>
 <p>Change the IP address in the command below to the EAP225 IP address.</p>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ssh -o HostKeyAlgorithms=+ssh-rsa -o ConnectTimeout=30 admin@192.168.0.254 &#39;cliclientd stopcs&#39;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ssh -oPubkeyAcceptedAlgorithms=+ssh-rsa -o HostKeyAlgorithms=ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@192.168.0.254 </code></pre></div>
+<p>Then stop the cert verification daemon</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>cliclientd stopcs</code></pre></div>
 <p><a href="https://openwrt.org/toh/tp-link/eap225" rel="external">Full OpenWRT Documentation for EAP225</a></p>
-<p>On some devices, for the SSH connection to work, you need to add</p>
-<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>-o PubkeyAcceptedAlgorithms=+ssh-rsa -o RSAMinSize=1024</code></pre></div>
 <ol start="4">
 <li>
 <p>Rename the OpenWrt &hellip;squashfs-factory.bin binary to factory.bin (The GUI has a limit on the file name length, shortening to e.g. factory.bin works.)</p>
@@ -172,15 +181,33 @@
 <li>
 <p>Upload the firmware on the firmware update page on the TP-link web GUI.</p>
 </li>
+</ol>
+<p><a href="#R-image-24f69445b80a2f13f61cf44a119b0ce4" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image-2.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-24f69445b80a2f13f61cf44a119b0ce4"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image-2.png"></a></p>
+<p><strong>WARNING</strong> Failing to use the correct image for your device may cause it to brick.
+We used this factory image for our V3 outdoor model.
+<a href="#R-image-ed4a1d49f06fb58362d9283c44fe4acd" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image-5.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed4a1d49f06fb58362d9283c44fe4acd"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image-5.png"></a></p>
+<ol start="6">
 <li>
 <p>Reconfigure your static IP to talk to OpenWrt on 192.168.1.1 (the OpenWrt default).</p>
 </li>
 <li>
-<p>Connect your workstation to ETH1 on the EAP615, disconnect internet (but not power) from the EAP615, and connect to the LUCi WEBUI.</p>
+<p>Connect your workstation to a POE switch or connect your workstation directly to the EAP225</p>
 </li>
 <li>
-<p>Go to NETWORK then INTERFACES and select the ETH0 or (br-lan) interface and add another IPv4 address that is not being used on your current network.</p>
+<p>Go to NETWORK then INTERFACES and select the ETH0 or (br-lan) interface and add another IPv4 address that is not being used on your current network. Set Gateway and subnet information.</p>
 </li>
+</ol>
+<p>Go to ADVANCED SETTINGS and add at least on DNS server, we added 3.</p>
+<p>SAVE AND APPLY the changes, and reboot the router.</p>
+<ol start="9">
+<li>Go to NETWORK&gt; DIAGNOSTICS and PING 8.8.8.8 to ensure internet connectivity.
+<a href="#R-image-3beb2a6895a71b395351962480d31977" class="lightbox-link"><img alt="alt text" class="lazy lightbox figure-image" loading="lazy" src="/openwrt/third-day/image-3.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3beb2a6895a71b395351962480d31977"><img alt="alt text" class="lazy lightbox lightbox-image" loading="lazy" src="/openwrt/third-day/image-3.png"></a></li>
+</ol>
+<p>If you&rsquo;re getting <a href="https://www.reddit.com/r/openwrt/comments/1j7862n/wget_returned_4_failed_to_download_a_package/" rel="external">this error</a>, try looing at DNS</p>
+<ol start="9">
 <li>
 <p>AP only or AP/Gateway
 <a href="https://www.youtube.com/watch?v=t4A0kfg2olo&t=22s" rel="external">Videos</a></p>
@@ -188,6 +215,10 @@
 <li>
 <p>after setting up AP only or AP/Gateway, use open WRT&rsquo;s backup function to create an image that can be easily added to other nodes on the same harware.</p>
 </li>
+</ol>
+<h1 id="gateway-setup">Gateway Setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<ol>
+<li>Go to SYSTEM&gt; SOFTWARE and</li>
 </ol>
 
   <footer class="footline">
@@ -263,8 +294,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781476919" defer></script>
-    <script src="/js/theme.min.js?1781476919" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1782064809" defer></script>
+    <script src="/js/theme.min.js?1782064809" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
